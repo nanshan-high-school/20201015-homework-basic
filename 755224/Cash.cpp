@@ -6,7 +6,7 @@ int main() {
     int amount[9] = {0};
 
     float moneyf;
-    cout << "How much money do you have: ";
+    cout << "How much money do you have(Minimum unit: 0.1): ";
     cin >> moneyf;
     int money = 10 * moneyf;
     
@@ -16,17 +16,15 @@ int main() {
     } while (10 * moneyf != money);
 
     int count = 0;
-    for (int counter=0; money != 0 && counter != 9; counter++) {
-        while (money - current[counter] >= 0) {
-            money -= current[counter];
-            amount[counter]++;
-        }
+    cout << "The simplest form to present " << moneyf << " is:\n";
+    for (int counter = 0; money != 0 && counter != 9; counter++) {
+        amount[counter] = money / current[counter];
+        money = money % current[counter];
         if (amount[counter] != 0) {
             cout << current[counter] * 0.1 << " * " << amount[counter] << "\n";
         }
         count += amount[counter];
     }
     
-    cout << "The simplest form to present " << moneyf << " is:\n";
     cout << "Total: " << count;
 }
