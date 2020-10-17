@@ -25,9 +25,12 @@ int main() {
     }
     
     cout << "The simplest form to present " << moneyf << " is:\n";
+    int count = 0;
     for (counter = 0; counter != 9; counter++) {
         if (amount[counter] != 0) {
             cout << current[counter] * 0.1 << " * " << amount[counter] << "\n";
         }
+        count += amount[counter];
     }
+    cout << "Total: " << count;
 }
