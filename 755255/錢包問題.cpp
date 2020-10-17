@@ -21,7 +21,7 @@ int main() {
         start = start + 10000;
         count++;
     }
-    while(num - 5000 >= start  && num >= 5000){
+    while(num - 5000 >= start && num >= 5000){
         start = start + 5000;
         count++;
     }
