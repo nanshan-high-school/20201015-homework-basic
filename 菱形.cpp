@@ -18,7 +18,7 @@ int main() {
         if ( height % 2 == 0){
             cout << "請輸入奇數 \n \n";
         }
-    }while (height % 2 == 0);
+    } while ( height % 2 == 0 );
 
     cout << "三角形符號: \n";
     cin >> mark; 
