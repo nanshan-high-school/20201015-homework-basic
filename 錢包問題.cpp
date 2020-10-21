@@ -41,5 +41,5 @@ int main() {
     num += remainder;
     remainder = price % 1;
 
-    cout << "最少要" << num << "個銅板+紙鈔";
+    cout << "最少要" << num << "個銅板+紙鈔\";
 }
