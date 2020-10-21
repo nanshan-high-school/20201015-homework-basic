@@ -4,7 +4,7 @@ int main() {
     float money;
 
     do {
-        cout << "¿é¤Jª÷ÃB";
+        cout << "è¼¸å…¥é‡‘é¡: ";
         cin >> money;
     }
     while (money <= 0);
