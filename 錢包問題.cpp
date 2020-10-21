@@ -12,7 +12,7 @@ int main() {
     int num = 0;
     int price = money*10;
     int remainder = price;
-    //remainder: 餘數(英文課???
+    //remainder: 餘數
 
     num = price / 10000;
     remainder = price % 10000;
@@ -41,5 +41,5 @@ int main() {
     num += remainder;
     remainder = price % 1;
 
-    cout << "最少要" << num << "個銅板+紙鈔\";
+    cout << "最少要" << num << "個銅板+紙鈔\n";
 }
