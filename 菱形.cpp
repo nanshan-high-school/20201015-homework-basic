@@ -7,15 +7,18 @@ int main() {
     string mark;
 
     cout << "目前還不會高為偶數的菱形 \n";
-    cout << "如果您輸入的高度為偶數會自動為您加一 \n";
+    cout << "如果您輸入的高度為偶數... \n";
+    cout << "反正輸入奇數就對了 \n";
     cout << "造成您的不便還請多多包涵,謝謝ღ \n \n";
     
-    cout << "三角形高度: \n";
-    cin >> height;
+    do {
+        cout << "三角形高度: \n";
+        cin >> height;
 
-    if ( height % 2 == 0){
-        cout << "已自動為您加一 \n \n";
-    }
+        if ( height % 2 == 0){
+            cout << "請輸入奇數 \n \n";
+        }
+    }while (height % 2 == 0);
 
     cout << "三角形符號: \n";
     cin >> mark; 
