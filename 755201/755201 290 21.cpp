@@ -7,7 +7,7 @@ int main() {
         cout << "輸入金額: ";
         cin >> money;
     }
-    while (money <= 0);
+    while (money <= 0 || 10 * money != int(10 * money));
 
     int money1 = money * 10, time = 0;
 
