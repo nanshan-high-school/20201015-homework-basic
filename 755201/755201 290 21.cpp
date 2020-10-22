@@ -11,39 +11,39 @@ int main() {
 
     int money1 = money * 10, time = 0;
 
-    while(money1 >= 10000) {
+    while (money1 >= 10000) {
         money1 -= 10000;
         time++;
     }
-    while(money1 >= 5000) {
+    while (money1 >= 5000) {
         money1 -= 5000;
         time++;
     }
-    while(money1 >= 1000) {
+    while (money1 >= 1000) {
         money1 -= 1000;
         time++;
     }
-    while(money1 >= 500) {
+    while (money1 >= 500) {
         money1 -= 500;
         time++;
     }
-    while(money1 >= 100) {
+    while (money1 >= 100) {
         money1 -= 100;
         time++;
     }
-    while(money1 >= 50) {
+    while (money1 >= 50) {
         money1 -= 50;
         time++;
     }
-    while(money1 >= 10) {
+    while (money1 >= 10) {
         money1 -= 10;
         time++;
     }
-    while(money1 >= 5) {
+    while (money1 >= 5) {
         money1 -= 5;
         time++;
     }
-    while(money1 >= 1) {
+    while (money1 >= 1) {
         money1 -= 1;
         time++;
     }
